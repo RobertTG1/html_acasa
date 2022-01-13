@@ -48,14 +48,14 @@ body {
  
   #showcase .bg-image {
     position: absolute;
-    background: #333 url("../img/08f38f3b0e2dd21ed00b97430ba6869e.png");
+    background: #333 url("../img/Guess-Symbol.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
     height: 450px;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 1;
   }
 
   #showcase h1 {
@@ -81,14 +81,15 @@ body {
     padding: 2em 1em 1em;
   }
   #section-b ul {
+    background-color: rgb(218, 13, 13);
     list-style: none;
     margin: 0;
     padding: 0;
   }
   #section-b li {
     margin-bottom: 1em;
-    background: #fff;
-    color: #333;
+    background: white;
+    color: black;
     width: 33%;
     float: left;
   }
@@ -101,7 +102,7 @@ body {
   /* Section C */
   #section-c {
     background: #fff;
-    color: #333;
+    color: black;
     padding: 2em;
   }
   
@@ -109,11 +110,11 @@ body {
 
   #section-d .box {
     padding: 2em;
-    color: #fff;
+    color: white;
   }
 
   #section-d .box:first-child {
-    background: #2690d4;
+    background: #c90a13;
   }
 
   
