@@ -175,23 +175,23 @@ body {
       width: 31%;
     }
   }
-/*  Formular */
-#form_job div{
+/* Formular */
+#formjob > div{
   width: 100%;
   max-width: 500px;
-  margin: auto;
-  text-align: left;
   margin: 10px auto;
+  text-align: left;
   padding: 10px 0px;
 
 }
-#form_job label{
+#formjob label {
   display: inline-block;
-  width: 20px;
+  width: 20%;
+
 }
-#form_job .bt{
+#formjob .bt{
   padding: 20px 30px;
-  background-color: blue;
+  background-color:cyan;
   border: none;
   color: #ffffff;
   font-weight: bold;
