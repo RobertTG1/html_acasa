@@ -175,4 +175,25 @@ body {
       width: 31%;
     }
   }
+/*  Formular */
+#form_job div{
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  margin: 10px auto;
+  padding: 10px 0px;
 
+}
+#form_job label{
+  display: inline-block;
+  width: 20px;
+}
+#form_job .bt{
+  padding: 20px 30px;
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 20px;
+}

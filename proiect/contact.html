@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <title>CSS Grid Site - PMS</title>
+        <title>CSS Grid Site - PMS </title>
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
         <meta name="description" content="Primul Meu Site Continut pentru SEO">
@@ -32,16 +32,58 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Adipisci eum error earum soluta voluptatum
                     nisi laboriosam eos saepe asperiores dolorum.</p>
-                <a href="portofoliu.html" class="btn">Afla mai multe</a>
+                <a href="acasa.html" class="btn">Afla mai multe</a>
             </div>
         </header>
 
        <!-- Main Area -->
-       <main id="main">
+        <main id="main">
+             
 <!-- Section A -->
 <section id="section-a" class="grid">
     <div class="content-wrap">
         <h1> Formular contact</h1>
+
+        <form action="" id="form_job">
+            <div>
+            <label for="nume"> Nume </label>
+            <input type="text" name="nume" id="nume">
+            </div>
+            <div>
+                <label for="prenume"> Prenume </label>
+                <input type="text" name="prenume" id="prenume">
+            </div>
+            <div>
+                <label for="sex"> Sex </label>
+                <input type="radio" name="sex" id="m"> Masculin</input> 
+                <input type="radio" name="sex" id="f"> Feminin </input> 
+                <input type="radio" name="sex" id="n"> Neutru </input> 
+            </div>
+            <div>
+                <label for="job"> Jobul dorit</label>
+                <input type="checkbox" name="full" id="full"> Full-time 
+                <input type="checkbox" name="part" id="Part"> Part-time <br>
+            </div>
+            <div>
+                <label for="oras"> Orasul unde doriti un job </label>
+                <select name="oras" id="oras" >
+                    <option value="0"> Selecteaza...</option>
+                    <option value="bucuresti"> Bucuresti </option>
+                    <option value="brasov"> Brasov </option>
+                    <option value="cluj"> Cluj </option>
+                    <option value="iasi"> Iasi </option>
+                </select>
+            </div>
+            <div>
+                <label for="mesaj"> Mesaj </label>
+                <textarea name="mesaj" id="mesaj" cols="30" rows="10" maxlength="160"></textarea>
+                <br>
+            </div>
+            <div>
+                <input type="reset" value="anuleaza">
+                <input type="submit" value="Trimite datele">
+            </div>
+        </form>
         </div>
         </section>
     </main>
