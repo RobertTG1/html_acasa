@@ -2,8 +2,9 @@
 var date  = new Date()
 
 var hour = date.getHours()
+var minutes = date.getMinutes()
 var isRaining = false
-var message = "Hello! The clock is " + hour
+var message = "Hello! The clock is " + hour + ":" + minutes
 // o variabila fara valoare (undefined)
 var city
 
