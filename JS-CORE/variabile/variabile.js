@@ -1,5 +1,5 @@
 // punem data curenta in variabila date
-var date  = new Date()
+var date = new Date()
 
 
 var hour = date.getHours()
@@ -14,4 +14,4 @@ var city
 // alert(message)
 console.log(message)
 
-document.write('<h1>' + message + '</h1>') 
+document.write('<h1>' + message + '</h1>')
