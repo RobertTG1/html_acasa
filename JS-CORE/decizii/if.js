@@ -1,6 +1,6 @@
 
-var isRaining = false
-var isSunny = false
+var isRaining = true
+var isSunny = true
 var isSnowing = false
 
 if (isRaining) {
