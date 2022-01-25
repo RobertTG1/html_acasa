@@ -4,14 +4,25 @@ var car = {
     model: 'Bel Air',
     year: 1957,
     color: 'red',
-    drive: function () {
+    batteryCapacity: 100,
+    averageConsumption: 8,
+    batteryCharge: 100,
+
+    drive: function (distance) {
+        this.batteryCharge -= 8 * distance / 100
         document.write('Driving car')
     },
-   paint: function(color) {
-        this.color = color 
-   }
+    fullCharge: function () {
+        this.batteryCharge = this.batteryCapacity
+    },
+    paint: function (color) {
+        this.color = color
+    }
 }
 document.write('My cars color is ' + car.color + "<br>")
 car.paint("blue")
 document.write('My cars color is ' + car.color + "<br>")
-car.drive()
+car.drive(300)
+document.write('Charge:' + car.batteryCharge + '<br>')
+car.fullCharge()
+document.write('Charge:' + car.batteryCharge + '<br>')
