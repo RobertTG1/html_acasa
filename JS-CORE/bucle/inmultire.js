@@ -1,5 +1,5 @@
 
-var i = 3;
+var i = 1.5;
 var j = 1;
 
 var max = 10;
@@ -19,7 +19,8 @@ for (i = 1;i <=max;i++) {
 
 
     for (j = 1; j <= max; j++) {
-        var message = `${j} x ${i} = ${j * i} <br>`
+        message = `${j} x ${i} = ${j * i} <br>`
         document.write(message)
     }
+    document.write('<br>')
 }
