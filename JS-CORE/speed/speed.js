@@ -23,6 +23,7 @@ function randomLetterElement() {
     div.style.top = randomNumber(99) + 'vh'
     div.style.left = randomNumber(99) + 'vw'
     div.classList.add('letter')
+    div.classList.add(div.innerText)
     document.querySelector('body').append(div)
 
 }
@@ -39,4 +40,14 @@ function hideStart() {
     document.querySelector('input').style.display = 'none'
 }
 
+function pressLetter(event) {
+    let code = event.code
+    let letter = String.fromCharCode(code)
+   let element = document.querySelector(`.${letter}`,)
+   if(element) {
+       element.remove()
+   }
+}
+
 document.querySelector('input').addEventListener('click', run)
+document.addEventListener('keydown', pressLetter)
