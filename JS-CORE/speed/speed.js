@@ -1,10 +1,11 @@
+const speed = 1000
+
 function randomNumber(max) {
     return Math.round(Math.random() * max)
 }
 
-
 function randomLetter() {
-    let letters = 'ABCDEFGHIJKLMNOPQRSTUVWYZ'
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     let i = randomNumber(letters.length - 1)
     return letters[i]
 }
@@ -13,7 +14,7 @@ function randomColor() {
     let red = randomNumber(255)
     let green = randomNumber(255)
     let blue = randomNumber(255)
-    return `rgb(${red},${green},${blue})`
+    return `rgb(${red}, ${green}, ${blue})`
 }
 
 function randomLetterElement() {
@@ -22,17 +23,16 @@ function randomLetterElement() {
     div.style.backgroundColor = randomColor()
     div.style.top = randomNumber(99) + 'vh'
     div.style.left = randomNumber(99) + 'vw'
-    div.classList.add('letter')
-    div.classList.add(div.innerText)
+    div.classList.add('letter', div.innerText)
     document.querySelector('body').append(div)
-
 }
 
 async function run() {
     var gameOver = false
-    while (!gameOver) {
+    hideStart()
+    while(!gameOver) {
         randomLetterElement()
-        await new Promise(run => setTimeout(run, 1))
+        await new Promise(r => setTimeout(r, speed))
     }
 }
 
@@ -41,12 +41,14 @@ function hideStart() {
 }
 
 function pressLetter(event) {
-    let code = event.code
+    let code = event.keyCode
     let letter = String.fromCharCode(code)
-   let element = document.querySelector(`.${letter}`,)
-   if(element) {
-       element.remove()
-   }
+    // gaseste primul element cu clasa literei apasate
+    let element = document.querySelector(`.${letter}`)
+    // daca elementul exista (nu este null) atunci il stergem din html
+    if (element) {
+        element.remove()
+    }
 }
 
 document.querySelector('input').addEventListener('click', run)

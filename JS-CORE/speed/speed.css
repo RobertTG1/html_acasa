@@ -4,7 +4,6 @@ body {
     justify-content: center;
     height: 100vh;
 }
-
 input {
     border-radius: 10px;
     background-color: orange;
@@ -15,10 +14,9 @@ input {
     cursor: pointer;
     font-size: 1.5em;
 }
-
 .letter {
-    position:fixed;
-    color:black;
+    position: fixed;
+    color: white;
     width: 1.2em;
     height: 1.2em;
     font-family: sans-serif;
