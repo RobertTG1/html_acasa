@@ -1,19 +1,19 @@
 div {
     border:5px solid brown;
-    padding:20px;
-    width:100%;
+    padding:10px 20px;
     max-width: 400px;
-    background-color: purple;
+    margin:20px auto;
 }
 
 body > div{
-    background-color: brown;
+    background-color: lightgoldenrodyellow;
     color:black;
 }
 
 div > div{
     background-color:blue;
     color:goldenrod;
+    border:double 5px brown;
 }
 
 div > div > div{

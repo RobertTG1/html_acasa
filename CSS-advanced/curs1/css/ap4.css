@@ -1,0 +1,52 @@
+[title] {
+    color: green;
+    font-size: 15px;
+}
+
+a[href="https://www.google.com"] {
+    color: cyan;
+    font-size: 25px;
+}
+
+a[href="https://en.wiktionary.org/wiki/perspiciatis"] {
+    color: goldenrod;
+    font-size: 15px;
+}
+
+a[href *="#en/ro/"] {
+    color: red;
+}
+
+a[href *="#fr/ro/"] {
+    color: aqua;
+}
+
+a[href ^="https"] {
+    text-transform: uppercase;
+}
+
+a[href $=".com"] {
+    text-decoration: none;
+    font-style: italic;
+}
+
+a[data-info~="external"] {
+    color: red;
+}
+
+a[data-info~="internal"] {
+    border: 1px solid black;
+}
+
+p:empty {
+    display: none;
+}
+
+ul#Meniu {
+    list-style: none;
+}
+
+ul#Meniu li {
+    display: inline-block;
+    padding: 5px 15px;
+}
