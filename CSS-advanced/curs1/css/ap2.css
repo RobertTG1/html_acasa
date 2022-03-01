@@ -27,3 +27,13 @@ div p{
     font-style:italic;
 
 }
+
+
+div ~ p{
+    font-style: oblique;
+    font-weight: bold;
+
+}
+
+
+

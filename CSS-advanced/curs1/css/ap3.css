@@ -1,0 +1,25 @@
+div {
+    border:5px solid brown;
+    padding:20px;
+    width:100%;
+    max-width: 400px;
+    background-color: purple;
+}
+
+body > div{
+    background-color: brown;
+    color:black;
+}
+
+div > div{
+    background-color:blue;
+    color:goldenrod;
+}
+
+div > div > div{
+    background-color:bisque;
+    color:green;
+}
+
+
+ 
