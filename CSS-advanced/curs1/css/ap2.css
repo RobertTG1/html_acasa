@@ -1,0 +1,29 @@
+
+div{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border: double 3px goldenrod;
+    padding: 10px 25px;
+
+}
+
+
+P{
+    color:darkblue;
+    font-size: 30px;
+}
+
+
+section{
+    border: double 4px goldenrod;
+    margin: auto;
+    
+}
+
+
+
+div p{
+    font-style:italic;
+
+}
