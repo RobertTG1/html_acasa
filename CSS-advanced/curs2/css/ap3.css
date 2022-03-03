@@ -1,0 +1,17 @@
+div{
+    width:100px;
+    top:0;
+    left:0;
+    height:100px;
+    overflow:hidden;
+    border:double 2px red;
+    position:absolute;
+    /*transition: width 2s;*/
+    transition:left 2s;
+    
+}
+
+div:hover{
+    left:50%;
+    /*width:100%;*/
+}
