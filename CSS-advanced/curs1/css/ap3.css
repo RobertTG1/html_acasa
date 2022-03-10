@@ -1,25 +1,16 @@
-div {
-    border:5px solid brown;
-    padding:10px 20px;
-    max-width: 400px;
-    margin:20px auto;
+div{
+    border: 5px solid red;
+    padding: 20px;
 }
-
 body > div{
-    background-color: lightgoldenrodyellow;
-    color:black;
+    background-color: brown;
+    color:#ffffff;
 }
-
 div > div{
-    background-color:blue;
-    color:goldenrod;
-    border:double 5px brown;
+    background-color: cornflowerblue;
+    color: cyan;
 }
-
 div > div > div{
-    background-color:bisque;
-    color:green;
+    background-color: darkmagenta;
+    color: #000000;
 }
-
-
- 
