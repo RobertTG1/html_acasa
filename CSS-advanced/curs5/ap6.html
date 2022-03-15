@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div>
+        <h1>Inima cu Canvas</h1>
+        <canvas id="myCanvas" width="300" height="270"></canvas>
+    </div>
+    <script>
+              var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+
+            context.arc(200, 100, 70, 0, 2 * Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.arc(100, 100, 70, 0, 2 * Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.rect(100, 100, 200, 200);
+            context.rotate(90 * Math.PI / 360);
+            context.fillStyle = "silver";
+            context.fillRect(143, -70, 140, 140);
+
+    </script>
+</body>
