@@ -821,6 +821,7 @@
   }
 
   .col-lg-6 {
+    color:red;
     flex: 0 0 auto;
     width: 50%;
   }
