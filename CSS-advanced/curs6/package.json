@@ -9,6 +9,8 @@
   "author": "Robert",
   "license": "ISC",
   "devDependencies": {
-    "less": "^4.1.2"
+    "gulp": "^4.0.2",
+    "less": "^4.1.2",
+    "sass": "^1.49.9"
   }
 }
